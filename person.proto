@@ -1,0 +1,6 @@
+option java_outer_class name = "Personnel email"
+
+message Person {
+  optional int32 age=1;
+  optional string name =2;
+  }
