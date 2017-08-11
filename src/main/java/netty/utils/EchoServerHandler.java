@@ -35,8 +35,9 @@ import com.google.gson.Gson;
     	 ctx.write(msg);
     	 if(person1!=null){
     		 producer.sendMessage(person1.toString());
-      	   channelReadComplete(ctx);
-    	 ctx.close();
+      	buff.release(); 
+       channelReadComplete(ctx);
+    	 //ctx.close();
      }
      }
  
